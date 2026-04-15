@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <style>
+        body,html { height: 100%; font-family: Poppins; font-weight: 300; }
+        .row { height: 100vh; }
+        .textbox {
+            position: relative;
+            margin: 30px 20px;
+        }
+
+        .textbox input {
+            width: 100%;
+            padding: 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .textbox label {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background-color: #fff;
+            font-size: 14px;
+            padding: 0 5px;
+            color: #888;
+            pointer-events: none;
+            transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+        }
+
+        .textbox input:focus + label,
+        .textbox input:not(:placeholder-shown) + label,
+        .textbox input:focus + input {
+            transform: translateY(-19px);
+            font-size: 12px;
+            color: #0051ff;
+            outline: 1px solid #ccc;
+        }
+        .bg-danger { background: linear-gradient(45deg, #dc3545, #ff4d5a); }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 bg-light d-flex align-items-center justify-content-center">
+                <form style="width: 100%; max-width: 400px;">
+                <h2 class="mb-4 text-center">Giriş Yap</h2>
+                <div class="textbox">
+                    <input type="text" id="username" placeholder="">
+                    <label for="username">Kullanıcı Adı</label>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" placeholder="">
+                    <label for="password">Şifre</label>
+                </div>
+                <div class="px-3">
+                    <button class="btn btn-primary w-100">Giriş</button>
+                </div>
+            </form>
+        </div>
+       <div class="col-6 bg-danger d-flex d-none d-md-block  flex-column align-items-center justify-content-center text-white">
+            <div class="row d-flex align-items-center">
+                <div class="col-2 d-none d-xl-block">
+                    <img src="assets/images/Gumball.webp" width="150px" alt="Gumball" class="img-fluid mb-4">
+                </div>
+                <div class="col-12 col-xl-10">
+                    <h1 class="fw-bold text-center">Tekrar Hoş Geldiniz!</h1>
+                    <p class="text-center">Sisteme giriş yaparak tüm özelliklere erişebilir, projelerinizi yönetmeye devam edebilirsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
