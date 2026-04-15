@@ -15,7 +15,7 @@ Bu proje, **Bootstrap 5** ve modern **CSS3** teknikleri kullanılarak geliştiri
 
 | Masaüstü Görünümü | Mobil Görünüm |
 | :---: | :---: |
-| <img src="assets/app-screenshots/desktop-ss" width="100%" alt="Desktop View"> | <img src="assets/app-screenshots/mobile-ss" width="100%" alt="Mobile View"> |
+| <img src="assets/app-screenshots/desktop-ss.png" width="100%" alt="Desktop View"> | <img src="assets/app-screenshots/mobile-ss.png" width="100%" alt="Mobile View"> |
 
 ## 🛠 Kullanılan Teknolojiler
 
